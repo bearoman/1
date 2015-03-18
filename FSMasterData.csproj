@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F1364F8-942D-41AF-846E-1F69C5E7FFB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSMasterData</RootNamespace>
+    <AssemblyName>FSMasterData</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FSMasterData.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\FSMasterData.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\FSMasterData.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSets\DSFormControl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFormControl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSFSMasterData.cs">
+      <DependentUpon>DSFSMasterData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSFSMasterData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFSMasterData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\ManagerPagesForm.cs" />
+    <Compile Include="FormControls\MasterEditFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControls\MasterEditFormBase.Designer.cs">
+      <DependentUpon>MasterEditFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\MasterFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControls\MasterFormBase.Designer.cs">
+      <DependentUpon>MasterFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\MasterFormFilterBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControls\MasterFormFilterBase.Designer.cs">
+      <DependentUpon>MasterFormFilterBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\MasterFromInterface.cs" />
+    <Compile Include="FormControls\UCFindPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\UCFindPanel.Designer.cs">
+      <DependentUpon>UCFindPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSQueriesAdapter.cs" />
+    <Compile Include="FSQueriesAdapterExtension.cs" />
+    <Compile Include="ItemQueryBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitControls\UWaitControlSmoll.cs" />
+    <EmbeddedResource Include="FormControls\MasterEditFormBase.resx">
+      <DependentUpon>MasterEditFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\MasterFormBase.resx">
+      <DependentUpon>MasterFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\MasterFormFilterBase.resx">
+      <DependentUpon>MasterFormFilterBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\UCFindPanel.resx">
+      <DependentUpon>UCFindPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="DataSets\DSFormControl.xsc">
+      <DependentUpon>DSFormControl.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DSFormControl.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFormControl.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DSFormControl.xss">
+      <DependentUpon>DSFormControl.xsd</DependentUpon>
+    </None>
+    <None Include="DSFSMasterData.xsc">
+      <DependentUpon>DSFSMasterData.xsd</DependentUpon>
+    </None>
+    <None Include="DSFSMasterData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFSMasterData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSFSMasterData.xss">
+      <DependentUpon>DSFSMasterData.xsd</DependentUpon>
+    </None>
+    <None Include="FSMasterData.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FozzySystems\Lib\FZControls\FZControls.csproj">
+      <Project>{D849F4CD-ACCC-49F4-961B-B4A7EA8353F5}</Project>
+      <Name>FZControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FozzySystems\Lib\FZCoreProxy\FZCoreProxy.csproj">
+      <Project>{4106C050-29DE-4C2F-A642-A48014DB4F2D}</Project>
+      <Name>FZCoreProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FozzySystems\Lib\Helpers\Helpers.csproj">
+      <Project>{70F9AFE0-E6B3-48AB-A332-0240201CBEDD}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FozzySystems\Lib\Types.Basic\Types.Basic.csproj">
+      <Project>{D23DBE71-763C-43D4-9840-9E339CEF4E34}</Project>
+      <Name>Types.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FozzySystems\Lib\Types.Contracts\Types.Contracts.csproj">
+      <Project>{E86430F4-58DE-4BAA-8EDB-8C4B42D181B0}</Project>
+      <Name>Types.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FozzySystems\Lib\Utils.Common\Utils.Common.csproj">
+      <Project>{37090360-8A69-4995-8F86-887618C7C27C}</Project>
+      <Name>Utils.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Filters\Filters.csproj">
+      <Project>{EB72927C-3EFC-4640-A492-202BEFA2251A}</Project>
+      <Name>Filters</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
